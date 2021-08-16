@@ -12,8 +12,6 @@ body{
     font-size: 1.6rem;
     font-family: "Noto",sans-serif;
     overflow: hidden;
-    width: 100%;
-    height: 100vh;
 }
 
 .gg-heading{
@@ -124,6 +122,14 @@ body{
     margin-bottom: 27px;
 }
 
+.gg-input{
+    flex: 1;
+    outline: none;
+    border: 0;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
 .gg-search:hover{
     box-shadow: 2px 1px 9px 0px rgba(0, 0, 0,0.2);
 }
@@ -138,7 +144,7 @@ body{
 
 
 .gg-body-btn{
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 }
 
 .gg-body-button-1,
@@ -148,13 +154,15 @@ body{
     border-radius: 3px;
     font-size: 16px;
     background-color: #f8f9fa;
-    border: none;
+    border: 0;
+    transition:all linear;
 }
 
 .gg-body-button-1:hover,
 .gg-body-button-2:hover
 {
-    border:0.5px solid #ccc;
+    border: 0.5px solid rgba(204, 204, 204,0.4);;
+   
     cursor: pointer;
     box-shadow: 1px 1px 0 0 rgba(204, 204, 204,0.4);
 }
@@ -163,16 +171,26 @@ body{
     margin-right:12px;
 }
 
+.gg-search i{
+    cursor: pointer;
+}
+
 .gg-notification{
     text-decoration: none;
     color:rgb(125,137,225);
-    margin-bottom: 40px;
     font-size: 15px;
+
+    display: block;
+}
+
+.text-foot{
+    height: 275px;
+    text-align: center;
 }
 
 .language{
     font-size: 15px;
-    margin-bottom: 200px;
+    margin-top: 40px;
 }
 
 .language li{
@@ -186,10 +204,13 @@ body{
     color:rgb(125,137,225);
 }
 
+.language li:hover a,
+.gg-notification:hover{
+    text-decoration: underline;
+}
+
+
 .gg-footer{
-    height: 95px;
-    width: 100%;
-    margin-bottom: -46px;
     background-color: #f2f2f2;
 }
 
@@ -234,4 +255,8 @@ hr{
 
 .footer-right > li >a{
     margin-left: 30px;
+}
+
+.gg-footer-a li:hover a{
+    text-decoration: underline;
 }
